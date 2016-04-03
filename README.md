@@ -68,3 +68,38 @@ get all vars:
 ```
 set
 ```
+######expanding var
+a = 3
+```
+echo $a  //3
+echo '$a' //$a
+echo "$a"  //3
+echo \$a  //$a
+```
+
+######customize
+```
+/etc/profile ->/etc/profile.d
+```
+#####shell commands
+######command history
+```
+env |grep HIST
+```
+######backgroundding
+```
+jobs
+```
+create a bg job:
+```
+sleep 600 &   //sleep 10 min
+```
+and again
+```
+jobs
+```
+if shows plus sign, means we can use
+```
+fg
+```
+to retrieve it, and ctrl z to suspend.
